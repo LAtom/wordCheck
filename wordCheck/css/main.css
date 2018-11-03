@@ -1,0 +1,132 @@
+
+
+.navbar-brand{
+    /*background-image: url(../img/logo.png);*/
+    width: 50px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+.text-conter{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.text-output{
+    width: 730px;
+    height: 334px;
+    border-radius: 4px;
+    background-color: #e4e4e4;
+    border: 1px solid #b5b5b5;
+}
+
+.text-result{
+    width: 730px;
+    height: 80px;
+    margin-top: 20px;
+}
+
+.text-result .title{
+    font-size: 20px;
+}
+
+.footer{
+    width: auto;
+    height: 200px;
+    background-color: #202020;
+    margin-top: 20px;
+    bottom: 0;
+}
+
+.footer-extra{
+    margin-top: 20px;
+    padding: 50px 0;
+    text-align: center;
+    color:#999;
+}
+
+.footer-title{
+    padding-top: 20px;
+    font-size: 20px;
+    color: #ffffff;
+    border-bottom: 1px solid #eea236;
+}
+
+.title-content{
+    padding-top: 10px;
+    color: #eeeeee;
+}
+
+.footer-text{
+    margin-top: 20px;
+    padding: 50px 0;
+    text-align: center;
+    color:#ebebeb;
+    bottom: 0;
+}
+
+.side-bar-card{
+    float: right;
+    background-color: #985f0d;
+    width: 250px;
+    height: 180px;
+    text-align: center;
+    color: #ebebeb;
+    display:inline-block;
+    margin-right: 30px;
+}
+
+.text-lg{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.side-bar-list{
+    float: right;
+    margin-top: 50px;
+    width: 300px;
+    height: 600px;
+    background-color: #ffffff;
+    border: 1px solid #d0d0d0;
+}
+
+.list-title{
+    height: 50px;
+    width: 250px;
+    font-size: 20px;
+    color: #666;
+    padding-top: 10px;
+    border-bottom: 1px solid #c1c1c1;
+    margin: 0 auto;
+}
+
+.list-body li{
+    height: 50px;
+    width: 250px;
+    font-size: 15px;
+    color: #666;
+    padding-top: 10px;
+    border-bottom: 1px solid #c1c1c1;
+
+    list-style: none;
+}
+.list-body li a{
+    color: #666666;
+    text-decoration: none;
+}
+.list-body li a:hover{
+    color: #000000;
+}
+
+.container-small{
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.container-small .btn-primary{
+    background-color: #ea0c3c;
+    border-color: #ac2925;
+}
+
