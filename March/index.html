@@ -7,6 +7,9 @@
 </head>
 <body>
 <div id="app">
+    <div>
+        <hr>
+    </div>
     <!--v-model指令:双向绑定 v-show指令-->
     <div>
         <h3>v-model指令 :双向绑定</h3>
@@ -98,6 +101,21 @@
         {{destination}}
     </div>
 
+    <div>
+        <hr>
+    </div>
+    <div>
+         <h3>控制流指令 :if</h3>
+        <div v-if="role =='admin'">
+            欢迎管理员!
+        </div>
+        <div v-else-if="role == 'hr'">
+            待查看简历列表
+        </div>
+        <div v-else>
+            没有权限
+        </div>
+    </div>
     <div>
         <hr>
     </div>

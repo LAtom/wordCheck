@@ -9,7 +9,7 @@ var app =new Vue({
         sexSelect :[],
         from : '1',
         destination :[],
-        //foodList :['v','u','e']
+        role :'hr',
         foodList : [
             {
               name : '葱',
