@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>March</title>
+
+</head>
+<body>
+<div id="app">
+    <!--v-model指令:双向绑定 v-show指令-->
+    <div>
+        <h3>v-model指令 :双向绑定</h3>
+        <h5>v-model.lazy="name" : 延迟name 的变化</h5>
+        <h5>v-model.trim="name" : 去掉前后的空格</h5>
+        <h5>v-model.trim="price" : number类型</h5>
+        <h5> v-show指令 : 是否显示</h5>
+        延迟:<input type="text" v-model.lazy="name"><br>
+        去掉前后空格:<input type="text" v-model.trim="name"><br>
+        <input type="text" v-model="name"><br>
+        <span v-show="name">你的名字是: {{name}}</span><br/>
+
+        <input type="text" v-model.number="price"><br>
+        <span v-show="price">价格是: {{price}}</span><br/>
+    </div>
+
+    <div>
+        <hr>
+    </div>
+    <!--v-for指令:遍历数组 可以动态添加-->
+    <div>
+        <h3>v-for指令 :动态添加或遍历对象</h3>
+        <ul style="list-style: none">
+            <li v-for="food in foodList">{{food.name}}:¥ {{food.discount ?food.price*food.discount : food.price}}</li>
+        </ul>
+    </div>
+
+    <div>
+        <hr>
+    </div>
+    <!--v-bind指令-->
+    <div>
+        <h3>v-bind指令 :动态绑定url</h3>
+        <h3>v-bing简化写法 只写 :</h3>
+        <!--<a v-bind:class="classT" v-bind:href="url">点我</a>-->
+        <a :href="url">点点我</a>
+    </div>
+
+    <div>
+        <hr>
+    </div>
+
+    <div>
+            <h3>v-on指令 : 绑定事件的指令 : 简化写法 : @</h3>
+        <button v-on:click="onClick" v-on="{mouseenter:onEnter,mouseleave:onOut}">点我呗</button>
+        <form v-on:submit.prevent="onSubmit" @keyup.enter="onEntered">
+            <input type="text">
+            <button type="submit">提交</button>
+        </form>
+    </div>
+
+    <div>
+        <hr>
+    </div>
+
+    <div>
+        <h3>v-model其他应用</h3>
+        <h4>单选按钮:</h4>
+        <label>
+            男 <input v-model="sex" type="radio" value="male">
+        </label>
+        <label>
+            女 <input v-model="sex" type="radio" value="female">
+        </label>
+        {{sex}}
+        <h4>复选按钮</h4>
+        <label>
+            男 <input v-model="sexSelect" type="checkbox" value="male">
+        </label>
+        <label>
+            女 <input v-model="sexSelect" type="checkbox" value="female">
+        </label>
+        {{sexSelect}}
+        <h4>select单选</h4>
+        <div>你来自哪里:</div>
+        <select v-model="from">
+            <option value="1">北京</option>
+            <option value="2">上海</option>
+            <option value="3">深圳</option>
+        </select>
+        {{from}}
+        <h4>select多选</h4>
+        <div>你要去哪里:</div>
+        <select v-model="destination" multiple>
+            <option value="1">北京</option>
+            <option value="2">上海</option>
+            <option value="3">深圳</option>
+        </select>
+        {{destination}}
+    </div>
+
+    <div>
+        <hr>
+    </div>
+</div>
+<script src="../node_modules/vue/dist/vue.js"></script>
+<script SRC="js/march.js"></script>
+</body>
+</html>
